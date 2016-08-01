@@ -1,0 +1,56 @@
+*{
+    padding:0;
+    margin:0;
+}
+.public-head{
+    width: 100%;
+    min-width: 1280px;
+    margin-bottom: 0;
+}
+.block1{
+    width: 100%;
+    background-color: #fff;
+    color: #29b078;
+    position: relative;
+}
+.tel{
+    display: inline-block;
+    margin: 5px auto 7px 15%;
+
+}
+
+.icon-head{
+    width: 108px;
+    height: 25px;
+    background-image: url("images/icon-head.png");
+    position: absolute;
+    right: 15%;
+    top: 4px;
+    display: block;
+}
+.block2{
+    background-color: #29b078;
+    color: #fff;
+    height:100px;
+    position: relative;
+    line-height: 100px;
+    text-align:right;
+    padding-right: 13%;
+}
+.logo{
+    width:113px;
+    height: 49px;
+    background-image: url("images/jinengshu.png");
+    position: absolute;
+    left: 15%;
+    top:25px;
+}
+nav a{
+    padding:0 2% 37.5px 2%;
+    text-decoration: none;
+    color: #fff;
+}
+nav a:hover{
+    border-bottom: solid 4px #fff;
+    margin-bottom: -4px;
+}

@@ -1,0 +1,63 @@
+*{
+    padding:0;
+    margin:0;
+}
+footer{
+    width: 100%;
+    height: 200px;
+    color: #fff;
+    background-color: #26a26f;
+    position: relative;
+
+}
+.tree {
+    margin-top:20px ;
+    color: #FFF;
+    float: left;
+    margin-left: 15%;
+    margin-bottom: 55px;
+}
+.tree p{
+    padding-bottom: 60px;
+}
+footer a{
+    text-decoration: none;
+    color: #fff;
+    padding-bottom: 5px;
+    font-size: 14px;
+}
+footer a:hover {
+    border-bottom: solid 2px #fff;
+}
+.web{
+    margin-top:20px;
+    margin-left: 100px;
+    float: left;
+    line-height: 27px;
+}
+.web p{
+    padding-bottom: 20px;
+}
+.icon{
+    position: absolute;
+    right: 16%;
+    top:20px;
+}
+.erweima{
+    width: 93px;
+    height: 92px;
+    background-image: url("images/erweima.png");
+    position: absolute;
+    right: 15%;
+    top: 45px;
+}
+.clear{
+    clear: both;
+}
+#copyright{
+    height: 27px;
+    line-height: 27px;
+    text-align: center;
+    font-size: 14px;
+    border-top:solid #32c086 1px;
+}
