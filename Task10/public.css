@@ -1,0 +1,100 @@
+header,
+header li {
+    display: block;
+}
+header {
+    position: relative;
+    width: 100%;
+    background-color:#fff;
+    overflow: hidden;
+}
+.tel{
+    line-height: 40px;
+    color: #29b078;
+}
+#share {
+    float: right;
+    padding-top: 8px;
+}
+.warp-nav{
+    width: 100%;
+
+    font-size:20px;
+    background-color: #29b078;
+}
+.navbar {
+    height: 100px;
+    margin-bottom: 0;
+}
+.nav-list {
+    height:100px;
+    float: right;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.nav-list li {
+    float: left;
+    list-style-type: none;
+}
+.nav-list li a {
+    height: 100px;
+    line-height: 100px;
+    display: block;
+    padding: 0 30px;
+    color: #fff;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.nav-list li a:hover {
+    border-bottom: solid 5px #fff;
+}
+.footer{
+    width: 100%;
+    color: #fff;
+    background-color: #26a26f;
+
+}
+#tree {
+    margin-top:20px ;
+    color: #FFF;
+    margin-bottom: 55px;
+}
+#tree p{
+    padding-bottom: 60px;
+}
+.footer a{
+    text-decoration: none;
+    color: #fff;
+    padding-bottom: 5px;
+    font-size: 14px;
+}
+.footer a:hover {
+    border-bottom: solid 2px #fff;
+}
+#web{
+    margin-top:20px;
+    line-height: 27px;
+}
+#web p{
+
+    padding-bottom: 2rem;
+}
+#icon{
+    margin:2rem auto;
+    width:93px;
+    text-align: center;
+}
+#erweima{
+    width: 93px;
+    height: 92px;
+    background-image: url("images/erweima.png");
+    position: absolute;
+    right: 15%;
+    top: 45px;
+}
+
+#copyright{
+    text-align: center;
+    font-size: 14px;
+    border-top:solid #32c086 1px;
+}
