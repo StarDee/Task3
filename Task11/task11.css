@@ -1,0 +1,139 @@
+.warp-top {
+    font-size: 18px;
+    height: 80px;
+    line-height: 80px;
+    border-bottom:solid 1px #d0d6d9;
+}
+.green{
+    color: #29b078;
+}
+#nav{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: solid 1px #edf1f2;
+    overflow: hidden;
+}
+.dir{
+    float: left;
+    color: #999;
+}
+
+#all,.choose{
+    color:#333;
+    padding: 3px 5px;
+    margin-right: 10px;
+    list-style-type: none;
+    display: inline-block;
+}
+#all{
+    background-color:#29b078;
+    color: #fff;
+}
+.choose:hover{
+    color: #fff;
+    background-color: #29b078;
+}
+.main-box{
+    margin-bottom: 20px;
+    overflow: hidden;
+    background-color: #fff;
+    border: solid 1px #f6f6f6;
+    position: relative;
+}
+.top{
+    margin: 20px 5px 15px 10px;
+}
+.top img{
+    float: left;
+    margin-right: 10px;
+}
+.top b{
+    margin-top: 12px;
+    margin-bottom: 24px;
+    display: inline-block;
+}
+.top-text{
+    text-align: justify;
+    margin-right: 10px;
+    word-break: break-all;
+    -webkit-word-break:break-all;
+}
+.clear {clear: both;}
+.summary p{
+    float: left;
+    width: 50%;
+    color: #999;
+    border-right: solid 1px #edf1f2;
+    border-top: solid 1px #edf1f2;
+    border-left: solid 1px #edf1f2;
+    box-sizing: border-box;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    margin: 0;
+}
+.t1{
+    color: #333;
+}
+.t2{
+    float: right;
+    padding-right: 15px;
+    color: #333;
+}
+.red{
+    color:#f01400;
+}
+.pay-text{
+    color: #999;
+    float: left;
+    width: 50%;
+    height: 144px;
+    line-height: 144px;
+    padding-left: 15px;
+    box-sizing: border-box;
+    border-top: solid 1px #edf1f2;
+}
+.learning{
+    padding-left: 15px;
+    height: 48px;
+    line-height: 48px;
+    border-bottom: solid 1px #edf1f2;
+    border-top: solid 1px #edf1f2;
+    border-collapse:collapse;
+}
+.tips{
+    padding-left: 15px;
+    height: 48px;
+    line-height: 48px;
+    font-size: 12px;
+    color:#999 ;
+}
+.hide-box {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    font-size: 16px;
+}
+.hide-box h2{
+    text-align: center;
+    margin-top: 140px;
+}
+.hide-box p{
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.hide-box:hover{
+    color: #fff;
+    background:rgba(61,61,61,0.6);
+    opacity: 1;
+}
+.warp-title {
+    margin-top:20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    border-bottom: solid 1px #999
+}
