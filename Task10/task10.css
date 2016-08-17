@@ -1,0 +1,134 @@
+body{
+    background-color: #fafafa;
+}
+.home-main {
+    padding-top: 160px;
+}
+.icon-gaoxiao,
+.icon-guifan,
+.icon-renmai {
+    text-align: center;
+}
+.main-title{
+    text-align: center;
+    font-size: 18px;
+    padding-top: 33px;
+    font-weight:bold;
+}
+.main-explain{
+    text-align:center;
+    padding-top: 33px;
+    color: #999;
+}
+.right-line{
+    border-right: solid 1px #dedede;
+}
+.stu-class {
+    text-align: center;
+}
+.student-num1{
+    padding-top: 80px;
+    color: #26a26f;
+}
+.student-num2{
+    padding-top: 20px;
+    color:#26a26f;
+}
+.word-num{
+    padding-top: 10px;
+}
+.warp-title{
+    padding-top:120px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+.round{
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: solid 1px #dedede;
+    text-align: center;
+    line-height: 65px;
+}
+.round,.word-run,.tri {
+    float: left;
+    color: #999;
+}
+.word-run{
+    margin-left:4px;
+    padding-top:18px;
+    width: 10em;
+}
+.tri{
+    padding-top: 20px;
+    padding-left: 23px;
+}
+.box {
+    padding: 20px 30px 0 30px;
+    background-color:#fff;
+    border:solid 1px #e2e2e2;
+    box-shadow: 1px 3px 2px #eeeded;
+    text-align: center;
+}
+.box p {
+    text-align:justify;
+}
+.bottom {
+    padding-top: 10px;
+    text-align: center;
+}
+.cir {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.cir-green {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #29b078;
+    border:solid 1px #e5e5e5;
+    box-shadow: 2px 1px 2px #e3e3e3;
+}
+@media screen and (min-width:1200px){.col-bottom {
+    width: 20%;
+    height:180px;
+    line-height: 180px;
+    float: left;
+    background-color: #fff;
+    box-shadow: 1px 2px 1px #e3e3e3;
+    text-align: center;
+}}
+.col-bottom:hover {
+    border: solid 2px #e3e3e3;
+    box-shadow: 1px 1px 5px #eeeded;
+}
+.home-link{
+    background-color: #fff;
+    margin-top:50px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.home-link ul{
+    width:80%;
+    margin: auto;
+}
+.home-link li{
+    list-style-position: inside;
+    float: left;
+    width:10%;
+    padding-top: 10px ;
+}
+.home-link li a{
+    text-decoration: none;
+    color:#a1a1a1 ;
+}
+.home-study,
+.home-student,
+.home-company {
+    text-align: center;
+}
