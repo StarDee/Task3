@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,chrome=1">
+    <title>递归</title>
+    <link href="assert.css" type="text/css" rel="stylesheet">
+    <script src="assert.js"></script>
+</head>
+<body>
+<script>
+    //回文定义：
+    //1.单个和零个字符都是一个回文。
+    //2.如果字符串的第一个字符和最后一个字符相同，
+    //并且除这两个字符以外的其他字符也是一个回文的话，我们称原字符串是一个回文。
+    //基于回文定义的检测回文函数
+    function isPalindrome(text) {
+        if (text == undefined) {
+            return false;
+        }
+        if (text.length <= 1) {
+            return true;
+        }
+
+        if (text.charAt(0) != text.charAt(text.length - 1)) {
+            return false;
+        }
+        return isPalindrome(text.substr(1, text.length - 2));
+    }
+    function chirp(n) {
+        return n > 1 ? chirp(n - 1) + "-chirp" : "chirp";
+    }
+    assert(chirp(3) == "chirp-chirp-chirp", "Calling the named function comes naturally.");
+    //方法中的递归
+    //    var ninja = {
+    //        chirp: function (n) {
+    //            return n > 1 ? ninja.chirp(n - 1) + "-chirp" : "chirp";
+    //        }
+    //    };
+    //在匿名函数中不再使用显示的ninja引用，而使用函数上下文this进行引用
+    var ninja = {
+        chirp: function (n) {
+            return n > 1 ? this.chirp(n - 1) + "-chirp" : "chirp"
+        }
+    };
+    assert(ninja.chirp(3) == "chirp-chirp-chirp", "An object property isn't too confusing,either");
+    //函数引用丢失
+    var samurai = {
+        chirp: ninja.chirp
+    };
+    //重新定义ninja为一个空对象
+    ninja = {};
+    try {
+        assert(samurai.chirp(3) == 'chirp-chirp-chirp', "Is this going to work?");
+    }
+    catch (e) {
+        assert(false, "Uh,this isn't good! Where'd ninja.chirp go?");
+    }
+    //当不是将函数作为方法而且不是所有的方法属性名都一样时，我们可以使用内联（命名）函数
+    //验证内联函数的标识
+    var inline = function myInline() {
+        assert(inline == myInline, 'This function is named two things at once!');
+    };
+    inline();
+    //内联函数的名称在内联函数外部是不可用的
+    assert(typeof myInline == 'undefined',
+        "But myInline isn't defined outside of the function.");
+</script>
+</body>
+</html>
