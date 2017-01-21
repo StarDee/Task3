@@ -65,6 +65,27 @@
     //内联函数的名称在内联函数外部是不可用的
     assert(typeof myInline == 'undefined',
         "But myInline isn't defined outside of the function.");
+//记忆之前计算出的值
+    function isPrime(value){
+        if(!isPrime.answer){
+            isPrime.answer={};
+        }
+        if(isPrime.answer[value]!=null){
+            return isPrime.answer[value];
+        }
+        var prime=value !=1;
+        for(var i=2;i<value;i++){
+            if(value % i==0){
+                prime=false;
+                break;
+            }
+        }
+        console.log(isPrime.answer[5]);
+        return isPrime.answer[value]=prime;
+    }
+    assert(isPrime(5),"5 is prime");
+    assert(isPrime.answer[5],"The answer was cached!");
 </script>
 </body>
 </html>
+
