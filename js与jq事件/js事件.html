@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js事件</title>
+</head>
+<body>
+<div id="a" style="width: 200px;height:100px;border: solid 2px red">
+    <button id="b">bbb</button>
+</div>
+<div id="c" style="width: 200px;height:100px;border: solid 2px green">
+    <button id="d">ddd</button>
+</div>
+<script>
+//  DOM0级事件处理程序
+    var btn = document.getElementById('b');
+    btn.onclick = function () {
+        alert('b');
+    };
+    var divA = document.getElementById('a');
+    divA.onclick = function () {
+        alert('a');
+    };
+//  DOM2级事件处理机制
+//  参数是true时，在捕获阶段调用事件处理程序，会先触发#c
+    var divC =document.getElementById('c');
+    divC.addEventListener("click",function () {
+        alert(this.id);
+    },true);
+    var btnD= document.getElementById('d');
+    btnD.addEventListener("click",function () {
+        alert(this.id);
+    },true);
+
+</script>
+</body>
+</html>
